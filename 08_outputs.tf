@@ -59,5 +59,23 @@ output "aws_ec2_stage_instance_id" {
     value = aws_instance.stage_server.id
 }
 
-# Additional Notes, We can execute below command to convert the output into json format.
+# Additional Notes:
+# 1) We can execute below command to convert the output into json format.
 [root@RockyLinux9 terraform_practice]# terraform output -json
+# 2) We can execute terraform output command to see only output.
+[root@RockyLinux9 terraform_practice]# terraform output
+Hello_world = "Hello world....!"
+aws_ec2_stage_instance_id = "i-0f20bbd972dc1cfe2"
+aws_ec2_test_instance_id = "i-03d27cfb369eb032e"
+aws_ec2_test_instance_priv_ip = "10.0.101.36"
+aws_ec2_test_instance_pub_ip = "18.209.167.96"
+aws_ec2_test_instance_type = "t2.micro"
+aws_pub_subnet1_id = "subnet-0e8313bdb431f9078"
+aws_pub_subnet2_id = "subnet-0f2f2bcda63e8f389"
+aws_security_group_id = [
+  "sg-09c7642b83d38540d",
+]
+aws_vpc_id = "vpc-00a764da2a9009645"
+public_url = "https://18.209.167.96:443/index.html"
+vpc_information = "Your dev environment has an VPC ID of : vpc-00a764da2a9009645"
+[root@RockyLinux9 terraform_practice]# 
