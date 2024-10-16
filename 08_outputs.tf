@@ -58,3 +58,6 @@ output "aws_ec2_stage_instance_id" {
     description = "AWS EC2 stage Instance ID"
     value = aws_instance.stage_server.id
 }
+
+# Additional Notes, We can execute below command to convert the output into json format.
+[root@RockyLinux9 terraform_practice]# terraform output -json
